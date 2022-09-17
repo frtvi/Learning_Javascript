@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>aripapaaripariri</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Input de nome e sobrenome</p>
+        <input type="text" placeholder="Digite seu nome" id="nome">
+        <input type="text" placeholder="Digite seu sobrenome" id="sobrenome">
+        <button onclick="nomeFuncao()">Clique aqui</button>
+
+        <p>Calculadora de soma</p>
+        <input type="text" placeholder="Digite um número" id="numero1">
+        <input type="text" placeholder="Digite digite outro" id="numero2">
+        <button onclick="calculadoraFuncao()">Clique aqui</button>
+
+        <script type="text/javascript">
+            function nomeFuncao(){
+                var nome = document.querySelector('#nome').value
+                var sobrenome = document.querySelector('#sobrenome').value
+
+                alert(nome+" "+sobrenome)
+            }
+            function calculadoraFuncao(){
+                var numero1 = parseInt(document.querySelector('#numero1').value)
+                var numero2 = parseInt(document.querySelector('#numero2').value)
+
+                var resultado = numero1 + numero2
+                alert(resultado)
+            }    
+        </script>
+
+
+    <p>ooo</p>
+    </body>
+</html>
